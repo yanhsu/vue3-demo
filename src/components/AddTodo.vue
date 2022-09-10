@@ -1,10 +1,6 @@
 <script setup>
     import TodoItem from './TodoItem.vue';
         defineProps({
-          todolist: {
-            type: Array,
-            required: true
-          },
           addTodo: {
             type: Function,
             required: true

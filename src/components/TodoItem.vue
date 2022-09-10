@@ -23,7 +23,7 @@
                 <b-input-group-prepend is-text>
                     <b-form-checkbox :modelValue="todo.done" class="mr-n2"  @click="toggleTodo(index)"/>
                 </b-input-group-prepend>
-                <b-form-input readonly=true :class="{delline: todo.done}" v-model="todo.title"></b-form-input>
+                <b-form-input readonly :class="{delline: todo.done}" v-model="todo.title"></b-form-input>
                 <b-input-group-append> 
                     <b-button type='submit' variant= 'primary' @click="deleteTodo(index)">
                         <font-awesome-icon icon="trash" />
