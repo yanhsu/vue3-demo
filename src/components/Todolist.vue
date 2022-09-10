@@ -53,7 +53,7 @@ import AddTodo from './AddTodo.vue';
             }
         },
         mounted() {
-            console.log(this.$props.todolist) // false
+            console.log(this.$props) // false
         }
     }
     </script>

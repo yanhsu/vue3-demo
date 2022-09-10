@@ -19,8 +19,6 @@
                     </b-button>
                     </b-input-group-append>
                 </b-input-group> 
-                <!-- <input type="text" name="" id="" v-model="text">
-                <button type="submit" @click="this.add(text)">新增</button> -->
             </div>
         </template>
 

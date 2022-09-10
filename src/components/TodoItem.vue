@@ -30,9 +30,6 @@
                     </b-button>
                 </b-input-group-append>
             </b-input-group>
-            <!-- <input type="checkbox" name="" id="" @click="toggleTodo(index)">
-            <span :class="{delline: todo.done}">{{ todo.title }}</span>
-            <button @click="deleteTodo(index)">delete</button> -->
         </b-list-group-item>
     </b-list-group>
 
