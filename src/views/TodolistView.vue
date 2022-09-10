@@ -5,10 +5,10 @@ import { parse } from '@vue/compiler-dom';
 
 <template>
   <Todolist 
-  :todolist="this.todolist"
-  :toggleTodo="this.toggleTodo"
-  :deleteTodo="this.deleteTodo"
-  :addTodo="this.addTodo"
+  :todolist="todolist"
+  :toggleTodo="toggleTodo"
+  :deleteTodo="deleteTodo"
+  :addTodo="addTodo"
   />  
 </template>
 

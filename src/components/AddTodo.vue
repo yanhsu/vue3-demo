@@ -1,20 +1,11 @@
-<script setup>
-    import TodoItem from './TodoItem.vue';
-        defineProps({
-          addTodo: {
-            type: Function,
-            required: true
-          }
-        });
-        
-        </script>
+
         
         <template>
             <div class= "mb-5">
                 <b-input-group class="mt-2">
                     <b-form-input   v-model="text"/>
                     <b-input-group-append> 
-                    <b-button type='submit' variant= 'primary' @click="this.add(text)">
+                    <b-button type='submit' variant= 'primary' @click="add(text)">
                         <font-awesome-icon icon="plus" />
                     </b-button>
                     </b-input-group-append>
@@ -24,9 +15,12 @@
 
     <script>
         export default {
+            props: {
+                addTodo: Function
+            },
             data() {
                 return {
-                    text: ""
+                    text:''
                 }
             },
             mounted() {

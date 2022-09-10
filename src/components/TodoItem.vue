@@ -1,21 +1,3 @@
-<script setup>
-    defineProps({
-      todolist: {
-        type: Array,
-        required: true
-      },
-      toggleTodo: {
-        type: Function,
-        required: true
-      },
-      deleteTodo: {
-        type: Function,
-        required: true
-      }
-    });
-    
-</script>
-
 <template>
     <b-list-group>
         <b-list-group-item v-for=" (todo, index) in todolist">
@@ -37,6 +19,11 @@
 
 <script>
     export default {
+        props: {
+            todolist: Array,
+            toggleTodo: Function,
+            deleteTodo: Function
+        },
         data() {
             return {
             }
