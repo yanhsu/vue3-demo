@@ -14,17 +14,14 @@ import { parse } from '@vue/compiler-dom';
 
 <script>
   export default {
-    mounted() {
-      if(localStorage.getItem("todolist") !== null && localStorage.getItem("todolist") !== undefined) {
-        this.todolist = JSON.parse(localStorage.getItem("todolist"));
-        console.log(JSON.stringify(this.todolist));
-      }
-    }, 
     data() {
       return {
         todolist: []
       }
     },
+    mounted() {
+        this.todolist = JSON.parse(localStorage.getItem('todolist')) || [];
+    }, 
     methods: {
       toggleTodo (index) {
         this.todolist[index].done = !this.todolist[index].done;
