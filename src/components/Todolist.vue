@@ -24,16 +24,24 @@ import AddTodo from './AddTodo.vue';
     </script>
     
     <template>
-        <div class="greetings">
-            <h1 class="green">{{ name }}</h1>
-            <AddTodo
-                :addTodo = "addTodo"
-            />
-            <TodoItem 
-                :todolist = "todolist" 
-                :toggleTodo = "toggleTodo"
-                :deleteTodo = "deleteTodo"
-            />      
+        <div>
+            <b-container>
+            <b-card
+                header="TODOLIST"
+                header-text-variant="white"
+                header-tag="header"
+                header-bg-variant="dark"
+            >
+                <AddTodo
+                    :addTodo = "addTodo"
+                />
+                <TodoItem 
+                    :todolist = "todolist" 
+                    :toggleTodo = "toggleTodo"
+                    :deleteTodo = "deleteTodo"
+                />
+            </b-card>     
+            </b-container >
         </div>
     </template>
 

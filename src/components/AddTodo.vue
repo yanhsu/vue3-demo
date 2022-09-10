@@ -14,9 +14,17 @@
         </script>
         
         <template>
-            <div>
-                <input type="text" name="" id="" v-model="text">
-                <button type="submit" @click="this.add(text)">新增</button>
+            <div class= "mb-5">
+                <b-input-group class="mt-2">
+                    <b-form-input   v-model="text"/>
+                    <b-input-group-append> 
+                    <b-button type='submit' variant= 'primary' @click="this.add(text)">
+                        <font-awesome-icon icon="plus" />
+                    </b-button>
+                    </b-input-group-append>
+                </b-input-group> 
+                <!-- <input type="text" name="" id="" v-model="text">
+                <button type="submit" @click="this.add(text)">新增</button> -->
             </div>
         </template>
 
